@@ -1,0 +1,90 @@
+{% extends 'base.html' %}
+{% block contact %}active2{% endblock %}
+{% load static %}
+{% load myfilters %}
+{% block style %}
+
+<style>
+    .text-1{
+        color: #3a395e;
+    }
+    .text-2{
+        color: #7051ef;
+    }
+    .dash{
+        width: 108px;
+        margin-bottom: 31px;
+        background-color: #7051ef;
+        border: 3px solid #7051ef;
+      }
+      .form{
+          border-radius: 35px;
+      }
+      .form-input{
+          border-radius:13px;
+          background-color: #f7f7fa;
+          border: 2px solid white;
+          transition:transform .2s;
+      }
+      .form-input:hover{
+          border: 2px solid #7051ef !important;
+          transform: scale(1);
+      }
+      .message-element{
+          height:150px
+      }
+      @media only screen and (max-width: 600px) {
+        .form{
+            padding: 1.5rem !important;
+        }
+      }
+</style>
+
+{% endblock %}
+{% block body %}
+
+<section class="my-5">
+    <div class="row">
+        <div class="col-sm-12 col-md-5 my-2">
+            <div class="dash"></div>
+            <div class=" col-sm-12"><h1 class="display-5 fw-bold text-1 ">Let's Work </h1></div>
+            <div class=" col-sm-12"><h1 class="display-5 fw-bold text-1 ">Together </h1></div>
+            <div class=" col-sm-12 fs-4"><p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p> </div>
+            <div class=" col-sm-12 fs-4"><p><i class="far fa-envelope"></i> shubhamjadhav190@gmail.com </p> </div>
+            <div class=" col-sm-12 ml-0 fs-4"><p><i class="fas fa-phone-alt"></i> +91 8007 454 373</p> </div>
+        </div>
+        <div class="col-sm-12 col-md-7 my-2">
+            <form action="" method="post">
+            <div class="form shadow p-5">
+                <div class="mb-3">
+                    {% csrf_token %}
+                    {{ form.name|addclass:'form-control form-input my-4 p-3'|addplaceholder:'full name' }}
+                    {{ form.name.errors }}
+                    {{ form.email|addclass:'form-control form-input my-4 p-3'|addplaceholder:'cat@catnip.com' }}
+                    {{ form.email.errors }}
+                    {{ form.contact|addclass:'form-control form-input my-4 p-3'|addplaceholder:'4585858585'|addpattern:'[0-9]{10}' }}
+                    {{ form.contact.errors }}
+                    {{ form.subject|addclass:'form-control form-input my-4 p-3'|addplaceholder:'Add your subject' }}
+                    {{ form.subject.errors }}
+                    {{ form.message|addclass:'form-control form-input my-4 p-3 message-element'|addplaceholder:'Your message is here ...'}}
+                    {{ form.message.errors }}
+
+                    <button class="btn btn-primary sub-button shadow" style="width:12rem; height:5rem; border-radius:30px" type="submit">Submit</button>
+
+                  </div>
+            </div>
+        </form>
+        </div>
+    </div>
+</section>
+
+{% comment %}
+<form action="" method="post">{% csrf_token %}
+
+    {{ form.as_table }}
+    
+    <input class="btn btn-primary btn-lg" type="submit" value="submit">
+</form>
+{% endcomment %}
+
+{% endblock %}

@@ -1,0 +1,15 @@
+{% block subject %}{{ subject }}{% endblock %}
+{% block html %}
+
+  <p>Hi </p>
+
+  Someone is having interest in your profile here are the details:<br><br>
+
+  Name:{{name}}<br><br>
+  Email:{{email}}<br><br>
+  Phone:{{phone}}<br><br>
+  Subject:{{subject}}<br><br>
+  Message:{{message}}<br><br>
+
+  <p>Thanks, you rock!</p>
+{% endblock %}

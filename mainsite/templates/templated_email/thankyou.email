@@ -1,0 +1,9 @@
+{% block subject %}{{ subject }}{% endblock %}
+{% block html %}
+
+  <p>Hi {{name}},</p>
+
+  thank you for having interest in my profile. let me know you best time to connect with you reply to this email.for the best time
+
+  <p>Thanks, you rock!</p>
+{% endblock %}

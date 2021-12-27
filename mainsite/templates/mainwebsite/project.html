@@ -1,0 +1,117 @@
+{% extends 'base.html' %}
+{% block project %}active2{% endblock %}
+{% load static %}
+{% load myfilters %}
+{% block style %}
+<style>
+    .dash{
+        width: 108px;
+        margin-bottom: 31px;
+        background-color: #7051ef;
+        border: 3px solid #7051ef;
+      }
+
+      .portfolio-card-2{
+        border-radius: 45px;
+        transition: transform .2s;
+    }
+    .portfolio-card-2:hover{
+        -ms-transform: scale(1.03); /* IE 9 */
+        -webkit-transform: scale(1.03); /* Safari 3-8 */
+        transform: scale(1.03); 
+    }
+
+    .portfolio-card-2 img{
+        border-radius: 45px;
+
+    }
+    .custom-badge{
+        font-weight:700;
+        background-color: #f3f1ff;
+        color:#7051ef;
+        padding: 15px;
+        border-radius: 20px;
+    }
+    .custom-badge-2{
+        font-weight:700;
+        background-color: hsla(327.27272727272737, 100.00%, 97.84%, 1.00);;
+        color:    hsl(341.8, 100%, 71.6%);
+        padding: 15px;
+        border-radius: 20px;
+    }
+</style>
+
+{% endblock %}
+{% block body %}
+
+<section>
+    <div class="container-fluid py-5">
+        <div class="dash"></div>
+        <div class="row d-flex">
+            <div class="col-md-6 col-sm-12"><h1 class="display-5 fw-bold text-1 ">My projects</h1></div>
+            <div class="col-md-6 col-sm-12 text-start fs-3"><p>Some of my project I've done recently</p> </div>
+        </div>
+      </div>
+
+      <div class="row my-5">
+        <div class="col-md-6 col-sm-12 my-2">
+          <div class="card mb-3 portfolio-card-2 shadow">
+              <img src="{% static 'mainwebsite/pt2.png' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title m-3"><span class="custom-badge badge ">Web Design</span></h5>
+                  <h4 class="card-title  m-3" style="color:#7051ef ;font-weight:600">Lorem ipsum dolor adipisicing elit. Numquam, sit!</h4>
+                  <p class="card-text m-3 p-1 fs-5" style="font-weight:500">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="card-text m-3 p-1">
+                    <a class="btn sub-button mx-1"><i class="fas fa-podcast text-light"> Live demo</i></i></a>
+                    <a class="btn sub-button mx-1"><i class="fab fa-github text-light"> Github repo   </i></a>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 my-2">
+          <div class="card mb-3 portfolio-card-2 shadow">
+              <img src="{% static 'mainwebsite/pt3.png' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title m-3"><span class="custom-badge-2 badge ">Web Design</span></h5>
+                  <h4 class="card-title m-3" style="color:#7051ef ;font-weight:600">Lorem ipsum dolor adipisicing elit. Numquam, sit!</h4>
+                  <p class="card-text m-3 p-1 fs-5" style="font-weight:500">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="card-text m-3 p-1">
+                    <a class="btn sub-button mx-1"><i class="fas fa-podcast text-light"> Live demo</i></i></a>
+                    <a class="btn sub-button mx-1"><i class="fab fa-github text-light"> Github repo   </i></a>
+                  </div>
+              </div>
+            </div>    
+        </div>
+        <div class="col-md-6 col-sm-12 my-2">
+          <div class="card mb-3 portfolio-card-2 shadow">
+              <img src="{% static 'mainwebsite/pt2.png' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title m-3"><span class="custom-badge badge ">Web Design</span></h5>
+                  <h4 class="card-title  m-3" style="color:#7051ef ;font-weight:600">Lorem ipsum dolor adipisicing elit. Numquam, sit!</h4>
+                  <p class="card-text m-3 p-1 fs-5" style="font-weight:500">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="card-text m-3 p-1">
+                    <a class="btn sub-button mx-1"><i class="fas fa-podcast text-light"> Live demo</i></i></a>
+                    <a class="btn sub-button mx-1"><i class="fab fa-github text-light"> Github repo   </i></a>
+                  </div>
+              </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-sm-12 my-2">
+          <div class="card mb-3 portfolio-card-2 shadow">
+              <img src="{% static 'mainwebsite/pt3.png' %}" class="card-img-top" alt="...">
+              <div class="card-body">
+                  <h5 class="card-title m-3"><span class="custom-badge-2 badge ">Web Design</span></h5>
+                  <h4 class="card-title m-3" style="color:#7051ef ;font-weight:600">Lorem ipsum dolor adipisicing elit. Numquam, sit!</h4>
+                  <p class="card-text m-3 p-1 fs-5" style="font-weight:500">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                  <div class="card-text m-3 p-1">
+                    <a class="btn sub-button mx-1"><i class="fas fa-podcast text-light"> Live demo</i></i></a>
+                    <a class="btn sub-button mx-1"><i class="fab fa-github text-light"> Github repo   </i></a>
+                  </div>
+              </div>
+            </div>    
+        </div>
+    </div>
+</section>
+
+
+{% endblock %}
