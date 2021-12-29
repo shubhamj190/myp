@@ -93,11 +93,11 @@ WSGI_APPLICATION = 'myp.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.mysql',
-        'NAME': "portfolio",
-        'HOST': "database.czv0fhonw5ck.us-east-2.rds.amazonaws.com",
-        "USER":"admin",
-        "PASSWORD":"redminote3kenzo",
-        "PORT":'3306',
+        'NAME': 'portfolio',
+        'USER': 'admin',
+        'PASSWORD': 'redminote3kenzo',
+        'HOST': 'portfolio-db.crutcevhgybz.ap-south-1.rds.amazonaws.com',
+        'PORT': '3306',
     }
 }
 
