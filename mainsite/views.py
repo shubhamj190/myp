@@ -24,11 +24,6 @@ class contact(CreateView):
         contactName=form.cleaned_data.get('name')
         contactPhone=form.cleaned_data.get('contact')
         contactMessage=form.cleaned_data.get('message')
-        print('contactEmail',contactEmail)
-        print('contactSubject',contactSubject)
-        print('contactName',contactName)
-        print('contactPhone', contactPhone)
-        print('contactMessage',contactMessage)
         send_templated_mail(
             template_name='thankyou',
             from_email='shubhamjadhav190@gmail.com',
