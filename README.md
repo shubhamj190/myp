@@ -18,3 +18,4 @@ To locally run the application
 - Run `pip install -r requirements.txt` to install the dependency
 - After installation of the dependencies run `python manage.py runserver`
 - Admin page is not accessable b'coz it is used in the production
+- Production deployment guide [link](https://www.digitalocean.com/community/tutorials/how-to-set-up-django-with-postgres-nginx-and-gunicorn-on-ubuntu-20-04)
