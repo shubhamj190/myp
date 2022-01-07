@@ -1,7 +1,7 @@
 # A Django based portfolio application
 
 This application is deployed on AWS EC2 platform 
-You can vistit tive version by visiting the [link](http://65.0.97.125/)
+You can visit live version by visiting the [link](http://65.0.97.125/)
 
 
 ## Technologies used here are 
